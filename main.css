@@ -1,0 +1,335 @@
+.kontejner
+{
+    max-width: 1200px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p 
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 
+{
+    font-size:24px;
+    font-weight: 500;
+}
+
+
+h2,h3,h5
+{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.bg
+{
+    background-image:url(img/ziarna.svg);
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+
+/*
+.proba
+{
+    padding-top: 1.2em;
+    margin-top: 1.5em;
+    padding-bottom: 1.2em;
+    margin-bottom: 1.5em;
+}
+*/
+
+.tytul h2
+{
+    font-size: 2.5em;
+    position:relative;
+    z-index: 1;
+}
+
+.tytul h2::before
+{
+    content: '';
+    background-color: rgba(212, 182, 148, 0.5);
+    width: 1em;
+    height: 4.5em;
+    position: absolute;
+    top: -.8em;
+    left: -.6em;
+    z-index: -1;
+
+}
+
+.tytulstandsfor h2
+{
+    font-size: 2.5em;
+    position:relative;
+    z-index: 1;
+}
+
+.tytulstandsfor h2::before
+{
+    content: '';
+    background-image: url(img/ziarenko1.svg);
+    width: 3em; /* a lil' bit sketchy tbh */
+    height: 3em; /* a lil' bit sketchy tbh */
+    position: absolute;
+    bottom: -.8em;
+    left: -2.5em;
+    z-index: -1;
+
+}
+
+.paragraf
+{
+
+    position:relative;
+    z-index: 1;
+}
+
+.paragraf::before
+{
+    content: '';
+    background-color: rgba(212, 182, 148, 0.5);
+    width: 3em;
+    height: 8em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*
+    top: 1em;
+    left: 17em; !!!!!!!!!!!
+    */
+    z-index: -1;
+
+}
+
+.button1 
+{
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    color: black;
+    background-color: #d4b694;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    width: 10em;
+    height: 2.5em;
+    border-color: #d4b694;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.7);
+}
+
+.button1:hover 
+{   
+    background-color: #c59c6d; 
+    border-color: #c59c6d;
+}
+
+.button2 
+{
+    background: none;
+    border-color: #d4b694;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    width: 10em;
+    height: 2.5em;
+    color: #d4b694;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 8px;
+        box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.7);
+}
+
+.button2:hover 
+{
+    color: #dbbe90;
+    background-color: #000000;  /* jaki dać tutaj hover color?*/
+    opacity: 0.7;               /* jak zrobić background opacity?*/
+    border-color: #dbbe90;
+}
+
+.button3 
+{
+    background-color: #BBA388;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    width: 180px;
+    height: 46px;
+    border-color: #d4b694;
+    color: black;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    
+    position:relative;
+    z-index: 1;
+    
+    /*  position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+
+.button3:hover 
+{   
+    background-color: #ab8e6d; 
+    border-color: #ab8e6d;
+}
+
+.tryit
+{
+    position:relative;
+    z-index: 1;
+}
+
+.tryit::before
+{
+    content: '';
+    background-color: rgba(212, 182, 148, 0.5);
+    width: 15em;
+    height: 1.2em;
+    position: absolute;
+    top: 2em;
+    left: -2em;
+    z-index: -1;
+
+}
+
+
+.duzeziarenko
+{
+    position:relative;
+    z-index: -0;
+}
+
+.duzeziarenko::before
+{
+    content: url(img/duzeziarenko2.svg);
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    margin-left: 5em;
+    margin-top: -7.5em; 
+
+}
+
+.duzeziarenkostandsfor
+{
+    position:relative;
+    z-index: -0;
+}
+
+.duzeziarenkostandsfor::before
+{
+    content: url(img/duzeziarenko.svg);
+    position: absolute;
+    z-index: -1;
+    top: -17em;
+    left: -15em;
+}
+
+
+
+.imagespawn
+{ 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    min-height: 20em;
+}
+
+.imagespawnsmall
+{
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100px;
+}
+
+.imagespawnnalewanie
+{ 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: left;
+    min-height: 40em;
+}
+
+/*
+.nalewanie
+{
+    position:relative;
+    z-index: 1;
+}
+
+.nalewanie::before
+{
+    content: '';
+    background-image: url(img/nalewanie.jpg);
+    width: 26em;
+    height: 60em;
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    z-index: -1;
+
+}
+*/
+
+.textsmallspawn
+{
+    padding:2em;
+}
+
+.formtext
+{
+    /* domyślna czcionka dla naklejek formularzy*/
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    
+}
+
+
+input[type=text],
+input[type=email]
+{
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.7);
+    width: 10em;
+    border: 1px solid;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 2px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea
+{
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.7);
+    min-width:20em;
+    border: 1px solid;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 2px;
+    box-sizing: border-box;
+    outline: none;
+}

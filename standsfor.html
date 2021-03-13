@@ -24,8 +24,20 @@
   
     <header>
         <div class="kontejner container-fluid justify-content-center" style="background-color:#170B06">
+                
+                <!--navbar importowany z pliku-->
+                <div id="nav-placeholder"></div>
+
+                <script>
+                 $(function(){
+                 $("#nav-placeholder").load("navbar.html");
+                 });
+                </script>
+            
+            
+           <!-- STARY NAVBAR
             <nav class="navbar navbar-dark bg-none navbar-expand-md">
-                    <a class="navbar-brand ps-3 text-white" href="#"><h1><div style="display: inline; color: #d4b694">coffee</div>house</h1></a>
+                    <a class="navbar-brand ps-3 text-white" href="index.html"><h1><div style="display: inline; color: #d4b694">coffee</div>house</h1></a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
                             <span class="navbar-light navbar-toggler-icon"></span>
@@ -36,11 +48,11 @@
                             <ul class="navbar-nav">
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-4 text-white" href="#"> home </a>
+                                    <a class="nav-link px-4 text-white" href="index.html"> home </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-4 text-white" href="#"> blog </a>
+                                    <a class="nav-link px-4 text-white" href="standsfor.html"> blog </a>
                                 </li>
 
                                 <li class="nav-item">
@@ -59,17 +71,19 @@
 
                         </div>
                         
-            </nav>
+            </nav> 
+            -->
 
         </div>
-        
-        <div class="kontejner tytulstandsfor col-6 offset-3 py-5"><h2>What<br>coffeehouse<br>stands for?</h2></div>
+    <div class="kontejner container-fluid justify-content-center">
+        <div class="tytulstandsfor col-6 offset-3 py-5"><h2>What<br>coffeehouse<br>stands for?</h2></div>
+    </div>
         
     <div class="kontejner container-fluid">    
         <div class="row">
             
             
-            <div class="d-none d-md-block col-md-4 d-flex flex-column p-0">
+            <div class="nalewaniespawn d-none d-md-block col-md-4 d-flex flex-column p-0">
                 <div class="py-5"></div>
                 <div class="py-5"></div>
                 <!--<div class="imagespawnnalewanie" style="background-image: url('img/nalewanie.jpg')"></div>-->
@@ -77,7 +91,7 @@
                 
             </div>
             
-            <div class="col-md-8 d-flex flex-column m-0">
+            <div class="col-md-6 offset-md-1 d-flex flex-column">
                 
                 <div class="py-4 px-5" style="font-size: 20px">
         
@@ -116,6 +130,8 @@
         
         
     </div>
+        
+        
         <div style="background-color:#ecddc5">
             <div class="kontejner container-fluid justify-content-center">
                     <div class="row d-flex" style="background-color:#ecddc5">
@@ -190,9 +206,6 @@
         
         
         
-        
-        
-   
     </header>
     
     
@@ -208,17 +221,6 @@
             </div>
         </div> 
     </footer>
-   
-   
-   
-   
-   
- 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-       
-        <script src="js/bootstrap.min.js"></script>
        
 </body>
 </html>

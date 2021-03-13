@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
  
         <meta charset="utf-8">
@@ -13,22 +13,37 @@
        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
+    
         <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');</style>
     
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-       
+
 </head>
    
 <body>
- 
-  
+
     <header>
+
+        
         <div class="bg">
             <div class="kontejner container-fluid justify-content-center">
+
+
+                <!--navbar importowany z pliku-->
+                <div id="nav-placeholder"></div>
+
+                <script>
+                 $(function(){
+                 $("#nav-placeholder").load("navbar.html");
+                 });
+                </script>
+                
+                
+                
+
+<!-- ORYGINALNY NAVBAR
                 <nav class="navbar navbar-dark bg-none navbar-expand-md">
-                        
-                        
-                        <a class="navbar-brand ps-3 text-white" href="#"><h1><div style="display: inline; color: #d4b694">coffee</div>house</h1></a>
+                        <a class="navbar-brand ps-3 text-white" href="index.html"><h1><div style="display: inline; color: #d4b694">coffee</div>house</h1></a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
                             <span class="navbar-light navbar-toggler-icon"></span>
@@ -39,11 +54,11 @@
                             <ul class="navbar-nav">
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-4 text-white" href="#"> home </a>
+                                    <a class="nav-link px-4 text-white" href="index.html"> home </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link px-4 text-white" href="#"> blog </a>
+                                    <a class="nav-link px-4 text-white" href="standsfor.html"> blog </a>
                                 </li>
 
                                 <li class="nav-item">
@@ -63,8 +78,8 @@
                         </div>
                         
                 </nav>
+-->
 
-                
 
                 <div class="py-4"></div>
                 
@@ -259,30 +274,31 @@
     
     
     
-    <footer>
+<footer>
         
-        <div style="background-color:#170B06">
-            <div class="kontejner container-fluid justify-content-center">
-                <div class="row d-flex">
-                    <a class="text-white pt-5 pb-3 ps-3" style="text-decoration:none;" href="#">
-                        <h1><div style="display: inline; color: #d4b694">coffee</div>house</h1>
-                    </a>
-                </div>
+    <div style="background-color:#170B06">
+        <div class="kontejner container-fluid justify-content-center">
+            <div class="row d-flex">
+                <a class="text-white pt-5 pb-3 ps-3" style="text-decoration:none;" href="index.html">
+                    <h1><div style="display: inline; color: #d4b694">coffee</div>house</h1>
+                </a>
             </div>
         </div>
+    </div>
         
-    </footer>
+</footer>
    
    
    
    
    
  
+<!--
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-       
-        <script src="js/bootstrap.min.js"></script>
-       
+-->
+        
+
 </body>
 </html>

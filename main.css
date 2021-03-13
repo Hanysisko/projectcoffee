@@ -293,6 +293,24 @@ h2,h3,h5
 }
 */
 
+.nalewaniespawn
+{
+    position:relative;
+    z-index: 1;
+}
+
+.nalewaniespawn::before
+{
+    content: '';
+    background-color: rgba(212, 182, 148, 0.5);
+    width: 2em;
+    height: 15em;
+    position: absolute;
+    top: 8em;
+    right: -1.5em;
+    z-index: -1;
+}
+
 .textsmallspawn
 {
     padding:2em;

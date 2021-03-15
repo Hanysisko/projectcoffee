@@ -29,6 +29,7 @@ h2,h3,h5
 
 }
 
+
 @media all and (min-width: 768px)
 {
     .nav-item:hover 
@@ -37,15 +38,6 @@ h2,h3,h5
     }
 }
 
-.nav-item:hover 
-{   
-        opacity: 80%;
-}
-
-.nav-link:hover 
-{   
-        opacity: 80%;
-}
 
 
 /*

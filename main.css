@@ -250,11 +250,17 @@ h2,h3,h5
 
 .duzeziarenkostandsfor::before
 {
-    content: url(img/duzeziarenko.svg);
+    background-image: url(img/duzeziarenko.svg);
+    background-size: 15em 15em;
+    width: 15em; 
+    height: 15em;
+    content:"";
+    max-height: 15em;
     position: absolute;
     z-index: -1;
-    top: -17em;
-    left: -15em;
+    top: -12em;
+    left: -8em;
+
 }
 
 
@@ -316,6 +322,8 @@ h2,h3,h5
 {
     position:relative;
     z-index: 1;
+    min-width: 17em;
+    max-width: 20em;
 }
 
 .nalewaniespawn::before

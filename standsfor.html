@@ -77,9 +77,13 @@
             <div class="py-4"></div>
 
         </div>
+        
+        <!--pole do kontaktu importowane z pliku-->
+        <div id="message-placeholder"></div>
+
+    
     </header>
-
-
+    
         <!--footer importowany z pliku-->
         <div id="footer-placeholder"></div>
 
@@ -92,7 +96,11 @@
      });
 
      $(function(){
-     $("#footer-placeholder").load("parts/msgfooter.html");
+     $("#message-placeholder").load("parts/message.html");
+     });
+
+     $(function(){
+     $("#footer-placeholder").load("parts/footer.html");
      });
     </script>
    

@@ -143,6 +143,11 @@
 
             </div>
         </div>
+        
+        <!--pole do kontaktu importowane z pliku-->
+        <div id="message-placeholder"></div>
+
+    
     </header>
     
     
@@ -153,9 +158,13 @@
          $(function(){
          $("#nav-placeholder").load("parts/navbar.html");
          });
+            
+         $(function(){
+         $("#message-placeholder").load("parts/message.html");
+         });
 
          $(function(){
-         $("#footer-placeholder").load("parts/msgfooter.html");
+         $("#footer-placeholder").load("parts/footer.html");
          });
         </script>
         

@@ -78,15 +78,17 @@ h2,h3,h5
 }
 
 .tytulstandsfor h2::before
-{
-    content: '';
+{    
     background-image: url(img/ziarenko1.svg);
-    width: 3em; /* a lil' bit sketchy tbh */
-    height: 3em; /* a lil' bit sketchy tbh */
+    background-size: 4em 4em;
+    width: 4em; 
+    height: 4em;
+    content:"";
+    max-height: 4em;
     position: absolute;
-    bottom: -.8em;
-    left: -2.5em;
     z-index: -1;
+    bottom: -.8em;
+    left: -3.2em;
 
 }
 
@@ -333,7 +335,7 @@ h2,h3,h5
     width: 2em;
     height: 15em;
     position: absolute;
-    top: 8em;
+    top: 5em;
     right: -1.5em;
     z-index: -1;
 }

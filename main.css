@@ -324,8 +324,8 @@ h2,h3,h5
 {
     position:relative;
     z-index: 1;
-    min-width: 17em;
-    max-width: 20em;
+    min-width: 12em;
+    max-width: 18em;
 }
 
 .nalewaniespawn::before
@@ -335,7 +335,7 @@ h2,h3,h5
     width: 2em;
     height: 15em;
     position: absolute;
-    top: 5em;
+    top: -6em;
     right: -1.5em;
     z-index: -1;
 }

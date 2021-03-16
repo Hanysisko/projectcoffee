@@ -272,7 +272,15 @@ h2,h3,h5
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-    height: 100px;
+    height: 6em;
+}
+
+.imagespawnsmallalt
+{
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 5em;
 }
 
 .imagespawnnalewanie

@@ -29,15 +29,10 @@ h2,h3,h5
 
 }
 
-
-@media all and (min-width: 768px)
-{
-    .nav-item:hover 
-    {   
-        opacity: 80%;
-    }
+.nav-item:hover 
+{   
+    opacity: 80%;
 }
-
 
 
 /*
@@ -106,8 +101,8 @@ h2,h3,h5
     width: 3em;
     height: 8em;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -5em;
+    right: 0em;
     /*
     top: 1em;
     left: 17em; !!!!!!!!!!!
@@ -241,6 +236,27 @@ h2,h3,h5
     height: auto;
     margin-left: 5em;
     margin-top: -7.5em; 
+
+}
+
+.duzeziarenkohome
+{
+    position:relative;
+    z-index: -0;
+}
+
+.duzeziarenkohome::before
+{
+    background-image: url(img/duzeziarenko.svg);
+    background-size: 14em 14em;
+    width: 14em; 
+    height: 14em;
+    content:"";
+    max-height: 14em;
+    position: absolute;
+    z-index: -1;
+    top: -11em;
+    right: 5em;
 
 }
 

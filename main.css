@@ -356,6 +356,28 @@ h2,h3,h5
     z-index: -1;
 }
 
+.mapaspawn
+{
+    position:relative;
+    z-index: 0;
+}
+
+.mapaspawn::before
+{
+    background-image: url(img/pinezka.svg);
+    background-size: 2em 2em;
+    width: 2em; 
+    height: 2em;
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+}
+
+
+
+
 .textsmallspawn
 {
     padding:2em;

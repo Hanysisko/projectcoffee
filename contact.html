@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       
+        <title>Contact - Tymek Coffeehouse</title>
+        <meta name="description" content="Coffeehouse">
+        <meta name="keywords" content="Coffeehouse, coffee, kawa, kawa ziarnista">
+        <meta name="author" content="Agnieszka Chmiel, Tymoteusz Radłowski">
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+
+    
+        <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');</style>
+    
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+   
+<body>
+
+    <header>
+        <!--navbar importowany z pliku-->
+        <div style="background-color:#170B06">
+            <div class="kontejner container-fluid justify-content-center">
+                <div id="nav-placeholder"></div>
+            </div>
+        </div>
+        
+        <div class="kontejner container-fluid justify-content-center">
+            <div class="col-md-8 offset-md-1 p-5" style="font-size: 1.5em"><h2>Would you like to contact us?<br>Or you have any questions?</h2></div>
+            <div class="col-md-7 offset-md-4 p-2" style="font-size: 1.5em">Rhoncus, auctor pretium at nibh proin metus</div>
+        </div>
+        
+        <!--pole do kontaktu importowane z pliku-->
+        <div id="message-placeholder"></div>
+        
+        
+        <div class="kontejner container-fluid justify-content-center">
+        
+            <div class="col-md-6 offset-md-6 p-4" style="font-size: 1.5em; min-height: 6em"><h2>You can also<br>come to our shop!</h2></div>
+            
+            <div class="py-4 d-md-none"></div>
+            
+            <div class="row d-flex">
+                
+                <div class="mapaspawn col-md-7 p-0"><img src="img/mapa.svg" class="nalewanie img-fluid float-start"></div>
+
+                <div class="col-md-5 d-flex flex-column gap-4 p-4">
+
+                    <div><h2>You will find our shops here:</h2></div>
+                    <div><h2>Jakaśtam Street 14<br>Warsaw</h2></div>
+                    <div><h2>Inna Street 29<br>Wrocław</h2></div>
+                    <div><h2>Jeszczeinna Street 3<br>Poznań</h2></div>
+
+                </div>
+                
+            </div>
+        
+        </div>
+        
+        
+        
+        
+    </header>
+    
+    
+        <!--footer importowany z pliku-->
+        <div id="footer-placeholder"></div>
+
+        <script>
+         $(function(){
+         $("#nav-placeholder").load("parts/navbar.html");
+         });
+            
+         $(function(){
+         $("#message-placeholder").load("parts/message.html");
+         });
+
+         $(function(){
+         $("#footer-placeholder").load("parts/footer.html");
+         });
+        </script>
+        
+        
+        <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

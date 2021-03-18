@@ -29,6 +29,12 @@ h2,h3,h5
 
 }
 
+.nav-item:hover 
+{   
+    opacity: 80%;
+}
+
+
 /*
 .proba
 {
@@ -67,15 +73,17 @@ h2,h3,h5
 }
 
 .tytulstandsfor h2::before
-{
-    content: '';
+{    
     background-image: url(img/ziarenko1.svg);
-    width: 3em; /* a lil' bit sketchy tbh */
-    height: 3em; /* a lil' bit sketchy tbh */
+    background-size: 4em 4em;
+    width: 4em; 
+    height: 4em;
+    content:"";
+    max-height: 4em;
     position: absolute;
-    bottom: -.8em;
-    left: -2.5em;
     z-index: -1;
+    bottom: -.8em;
+    left: -3em;
 
 }
 
@@ -93,8 +101,8 @@ h2,h3,h5
     width: 3em;
     height: 8em;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -5em;
+    right: 0em;
     /*
     top: 1em;
     left: 17em; !!!!!!!!!!!
@@ -231,19 +239,46 @@ h2,h3,h5
 
 }
 
-.duzeziarenkostandsfor
+.duzeziarenkohome
 {
     position:relative;
     z-index: -0;
 }
 
-.duzeziarenkostandsfor::before
+.duzeziarenkohome::before
 {
-    content: url(img/duzeziarenko.svg);
+    background-image: url(img/duzeziarenko.svg);
+    background-size: 14em 14em;
+    width: 14em; 
+    height: 14em;
+    content:"";
+    max-height: 14em;
     position: absolute;
     z-index: -1;
-    top: -17em;
-    left: -15em;
+    top: -11em;
+    right: 5em;
+
+}
+
+.duzeziarenkoabout
+{
+    position:relative;
+    z-index: -0;
+}
+
+.duzeziarenkoabout::before
+{
+    background-image: url(img/duzeziarenko.svg);
+    background-size: 16em 16em;
+    width: 16em; 
+    height: 16em;
+    content:"";
+    max-height: 16em;
+    position: absolute;
+    z-index: -1;
+    top: -13em;
+    left: -9em;
+
 }
 
 
@@ -261,7 +296,15 @@ h2,h3,h5
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-    height: 100px;
+    height: 6em;
+}
+
+.imagespawnsmallalt
+{
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 5em;
 }
 
 .imagespawnnalewanie
@@ -292,6 +335,26 @@ h2,h3,h5
 
 }
 */
+
+.nalewaniespawn
+{
+    position:relative;
+    z-index: 1;
+    min-width: 11em;
+    max-width: 18em;
+}
+
+.nalewaniespawn::before
+{
+    content: '';
+    background-color: rgba(212, 182, 148, 0.5);
+    width: 2em;
+    height: 15em;
+    position: absolute;
+    top: -6em;
+    right: -1.5em;
+    z-index: -1;
+}
 
 .textsmallspawn
 {
@@ -325,7 +388,11 @@ input[type=email]
 textarea
 {
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.7);
-    min-width:15em;
+    width: 100%;
+/*
+    min-width: 15em;
+    max-width: 20em;
+*/
     border: 1px solid;
     border-radius: 7px;
     font-size: 14px;

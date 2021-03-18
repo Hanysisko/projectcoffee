@@ -282,6 +282,27 @@ h2,h3,h5
 }
 
 
+.duzeziarenkoaboutrobocze
+{
+    position:relative;
+    z-index: -0;
+}
+
+.duzeziarenkoaboutrobocze::before
+{
+    background-image: url(img/duzeziarenko.svg);
+    background-size: 16em 16em;
+    width: 16em; 
+    height: 16em;
+    content:"";
+    max-height: 16em;
+    position: absolute;
+    z-index: -1;
+    top: -11em;
+    left: -6.8em;
+}
+
+
 
 .imagespawn
 { 

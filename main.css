@@ -407,12 +407,12 @@ p2
     left: 50%;
 }
 
-.ziarenkosklep
+.linkhover
 {
     text-decoration: none;
 }
 
-.ziarenkosklep:hover
+.linkhover:hover
 {
     opacity: 80%;
     transition: 0.2s;

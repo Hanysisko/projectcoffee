@@ -285,6 +285,46 @@ p2
     left: -3em;
 }
 
+.kontejnermessage
+{
+    position:relative;
+    z-index: 1;
+}
+
+.kontejnermessage::before
+{
+    background-image: url(img/duzeziarenkomessage.svg);
+    content:"";
+    background-size: 12em 12em;
+    width: 12em; 
+    height: 12em;
+    max-height: 12em;
+    position: absolute;
+    z-index: -1;
+    bottom: 1em;
+    left: 1em;
+}
+
+.kontejnermessage2
+{
+    position:relative;
+    z-index: 0;
+}
+
+.kontejnermessage2::before
+{
+    background-image: url(img/duzeziarenko2.svg);
+    content:"";
+    background-size: 8em 8em;
+    width: 8em; 
+    height: 8em;
+    max-height: 8em;
+    position: absolute;
+    z-index: -1;
+    bottom: -12em;
+    right: 2em;
+}
+
 
 .duzeziarenko
 {
@@ -520,21 +560,7 @@ textarea
     outline: none;
     
     position:relative;
-    z-index: -0;
-}
-
-textarea:before
-
-{
-    background-image: url(img/duzeziarenko.svg);
-    background-size: 1em 1em;
-    width: 10em; 
-    height: 10em;
-    content:"";
-    max-height: 1em;
-    position: absolute;
-    z-index: -1;
-    top: 1em;
-    right: 1em;
+    z-index: 0;
     
 }
+

@@ -211,6 +211,41 @@ p2
     border-color: #ab8e6d;
 }
 
+.button4 
+{
+    background-color: #D4B694;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 8em;
+    height: 2em;
+    border-color: #d4b694;
+    color: black;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    
+    position:relative;
+    z-index: 1;
+    
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.3);
+    
+    /*  position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+
+.button4:hover 
+{   
+    background-color: #cca87f; 
+    border-color: #cca87f;
+}
+
 .tryit
 {
     position:relative;
@@ -226,8 +261,28 @@ p2
     position: absolute;
     top: 2em;
     left: -2em;
-    z-index: -1;
+    z-index: -2;
 
+}
+
+.tryit2
+{
+    position:relative;
+    z-index: 1;
+}
+
+.tryit2::before
+{
+    background-image: url(img/ziarenkolewe.svg);
+    content:"";
+    background-size: 7em 7em;
+    width: 7em; 
+    height: 7em;
+    max-height: 7em;
+    position: absolute;
+    z-index: -1;
+    top: -4em;
+    left: -3em;
 }
 
 
@@ -463,4 +518,23 @@ textarea
     padding: 2px;
     box-sizing: border-box;
     outline: none;
+    
+    position:relative;
+    z-index: -0;
+}
+
+textarea:before
+
+{
+    background-image: url(img/duzeziarenko.svg);
+    background-size: 1em 1em;
+    width: 10em; 
+    height: 10em;
+    content:"";
+    max-height: 1em;
+    position: absolute;
+    z-index: -1;
+    top: 1em;
+    right: 1em;
+    
 }
